@@ -7,18 +7,137 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1894.6">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 17.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 40.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; text-shadow: 1px 2px 2px #F23800;}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 17.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 18.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
     p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 29.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
-<body>
-<p class="p1"><span class="s1">BackInStock App</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1">BackInStock is an app the allows you to specify your own URLs and specify your own search keywords, and how often you want to check for it. It will then work tirelessly to check using your criteria. BackInStock will automatically notify you via email or a custom web service when your keywords are found.</span></p>
-<p class="p4"><span class="s1"></span><br></p>
+<body style="background-color: #8DCE53;">
+<table width="80%" align="center">
+<thead>
+<tr><th><img src="BackInStockx512.png" height="256" width="256" /></th></tr>
+<tr><th><p class="p1"><span class="s1">BackInStock App</span></p><br></th></tr>
+</thead>
+<tbody>
+<tr>
+<td><p class="p3"><span class="s1">BackInStock is an app the allows you to specify your own URLs and specify your own search keywords, and how often you want to check for it.
+<br>It will then work tirelessly to check using your criteria.
+<br>BackInStock will automatically notify you via email or a custom web service request when your keywords are found.</span></p><br>
+</td>
+</tr>
+<td><p class="p2"><span class="s1">First Launch</span></p>
+</td>
+</tr>
+<tr>
+<td><p class="p3"><span class="s1">When you first launch the app, you can enter the website
+that you want to track under the “website” column.<br>
+Example: https://www.example.com<br>
+The “Search String” is the criteria of what you want the app
+to search for.<br>You can also specify multiple strings to search
+for, which are separated by a comma.<br>
+If “Matches all” is checked, then all of the search strings
+must be matched for you to get notified.<br>Else, if any of the
+search strings are matched then you will get notified.<br>
+“Regex” is for matching using regex syntax. This is for more
+advanced users.<br>
+Hit the “+” button will add another website to be tracked.<br>
+Hit the “-” will remove the last website.</span></p>
+</td>
+</tr>
+<tr>
+<td align="center"><img src="s1.png" height="463" width="840" />
+</td>
+</tr>
+<tr>
+<td><p class="p2"><span class="s1">General Settings</span></p>
+</td>
+</tr>
+<tr>
+<td><p class="p3"><span class="s1">Under “General”, this is where you can configure the time
+interval between checks in seconds.<br>I would recommend
+around 30 or more seconds.<br>
+“Popup notifications on Mac” will notify you on the
+notification center.<br>
+“Send Email” will send an email every time it detects the
+“Search String”.<br>Sometimes, you don’t want to receive too
+many emails. <br>The “Send a maximum” will further limit up
+to how many emails you want to receive per minute.<br>
+“Send Web Hook” will trigger a web request to the address
+you specified. This can be used for triggering services like
+“IFTTT” or other web services.<br>
+You can uncheck or check any of the three notification
+methods.</span></p>
+</td>
+</tr>
+<tr>
+<td align="center"><img src="s3.png" height="440" width="562" />
+</td>
+</tr>
+<tr>
+<td><p class="p2"><span class="s1">Email Settings</span></p>
+</td>
+</tr>
+<tr>
+<td><p class="p3"><span class="s1">Under the “Email”, you can configure your email server
+settings. <br>You need to have an email service that will let you
+send email using SMTP.<br>
+“Send Email From” is the email address that you want the
+recipients see.<br>
+“Username” is the login for the SMTP email service.<br>
+“Password” is the password for the SMTP email service.<br>
+“SMTP Server” is the server for the STMP email service.<br>
+“Port” is usually “465” or “587” depends on the service you
+are using.<br>
+are using.<br>
+“Destination Emails” is the recipient email address.</span></p>
+</td>
+</tr>
+<tr>
+<td align="center"><img src="s4.png" height="440" width="562" />
+</td>
+</tr>
+<tr>
+<td><p class="p2"><span class="s1">Web Hook Settings</span></p>
+</td>
+</tr>
+<tr>
+<td><p class="p3"><span class="s1">Under the “Web Hook”, you can configure an external web
+service this app can send request to.<br>
+For example: https://maker.ifttt.com/trigger/{event}/with/key/xxxxxxxxxx<br>
+The app will make a request to the above host and then you
+can further customize from IFTTT.com to your own actions
+when the link is triggered. <br>Like sending you a notification
+or sending a tweet, etc.</span></p>
+</td>
+</tr>
+<tr>
+<td align="center"><img src="s5.png" height="440" width="562" />
+</td>
+</tr>
+<tr>
+<td><p class="p2"><span class="s1">Logging</span></p>
+</td>
+</tr>
+<tr>
+<td><p class="p3"><span class="s1">You can see what the app is doing by clicking the
+hamburger icon.<br>
+You can also download the log file if you want to save it
+elsewhere.</span></p>
+</td>
+</tr>
+<tr>
+<td align="center"><img src="s5.png" height="450" width="592" />
+</td>
+</tr>
+<tr>
+<td>
+<br><br>
 <p class="p3"><span class="s1"><a href="privacy.html">Privacy Policy</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
